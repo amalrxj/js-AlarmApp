@@ -39,11 +39,10 @@ setInterval(() => {
     currentTime.innerText = `${h}:${m}:${s} ${ampm}`;
 
     if (alarmTime == `${ h }:${ m } ${ ampm }`){
-        console.log("Alarm Ringing");
         ringtone.play();
         ringtone.loop = true;
     }
-}, 1000);
+});
 
 function setAlarm() {
     if(isAlarmSet){
