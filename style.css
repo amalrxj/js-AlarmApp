@@ -42,6 +42,11 @@ body {
   width: 100%;
 }
 
+.wrapper .content.disable{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .wrapper .column {
   border-radius: 5px;
   border: 1px solid #999;
@@ -50,9 +55,25 @@ body {
 }
 
 .column select {
+  background: none;
   outline: none;
   border: none;
   height: 45px;
   width: 100%;
   font-size: 17px;
+  cursor: pointer;
 }
+
+.wrapper button {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #4a98f7;
+  color: #fff;
+  cursor: pointer;
+}
+
